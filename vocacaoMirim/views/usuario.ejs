@@ -1,0 +1,37 @@
+<%- include("partials/header") %>
+
+<div class="container">
+  <h1 class="text-center mb-4">Área do Coroinha</h1>
+
+  <div class="card shadow p-4">
+    <h3 class="mb-3">Consultar Escala</h3>
+
+    <form id="loginForm">
+      <div class="mb-3">
+        <label class="form-label">Nome</label>
+        <input id="nome" type="text" class="form-control" placeholder="Digite seu nome">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Senha</label>
+        <input id="senha" type="password" class="form-control" placeholder="Digite sua senha">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Capela</label>
+        <select id="capela" class="form-control" disabled>
+          <option value="">Selecione sua capela</option>
+          <option value="sj">Capela São José</option>
+        </select>
+      </div>
+
+      <div class="text-center">
+        <button class="btn btn-primary w-100">Ver escala</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<%- include("partials/footer") %>
+
+<script src="/js/loginCoroinha.js"></script>

@@ -1,0 +1,166 @@
+/* =======================
+   NAVBAR
+   ======================= */
+.navbar {
+    background-color: #810b33; /* Cor de fundo da barra de navegação */
+}
+
+.nav-btn {
+    background-color: #810b33; /* Cor do botão da navbar */
+    color: #ffffff !important;  /* Texto branco */
+    padding: 8px 16px;          /* Espaçamento interno */
+    border-radius: 8px;         /* Bordas arredondadas */
+    font-weight: 500;           /* Peso da fonte */
+    transition: all 0.3s ease;  /* Animação suave para hover */
+    text-align: center;         /* Centraliza o texto do botão */
+}
+
+.nav-btn:hover {
+    background-color: #810b33; /* Cor ao passar o mouse */
+    color: #ffffff !important; /* Mantém texto branco */
+    transform: translateY(-1px); /* Leve movimento para cima */
+}
+
+
+/* =======================
+   CONTAINER PRINCIPAL
+   ======================= */
+.container-vinho {
+    background-color: #6b1e1e; /* Fundo vinho */
+    border-radius: 12px;        /* Bordas arredondadas */
+    padding: 20px;              /* Espaçamento interno */
+    max-width: 1090px;          /* Limita largura máxima */
+    margin: 0 0 30px 40px;      /* Espaçamento: embaixo e à esquerda */
+}
+
+/* =======================
+   IFRAME VISOR
+   ======================= */
+/* Container externo: define altura visível e esconde excesso */
+.iframe-visor {
+    width: 100%;
+    height: 700px;             /* Altura visível do container */
+    overflow: hidden;          /* Esconde conteúdo que ultrapassa */
+    position: relative;        /* Necessário para posicionar o iframe dentro */
+    border-radius: 2.0rem;     
+    border: 3px solid #000000; /* Borda do container */
+}
+.santo-wrapper {
+    display: flex;             /* coloca os dois containers lado a lado */
+    gap: 20px;                 /* espaço entre eles */
+    align-items: flex-start;   /* alinha pelo topo */
+}
+
+/* Container do Santo do Dia: mantém o mesmo tamanho que já tinha */
+.santo-container {
+    flex: none;                /* não muda tamanho automático */
+    width: 1090px;             /* mesmo max-width do container-vinho original */
+}
+
+/* Novo container de texto ao lado */
+.texto-container {
+    flex: 1;                   /* ocupa o espaço restante ao lado */
+    background-color: #810b33; /* cor de destaque */
+    border-radius: 12px;
+    padding: 20px;
+    max-height: 700px;         /* mesma altura do Santo do Dia */
+    overflow-y: auto;          /* scroll se o texto for maior que a altura */
+}
+/* Iframe interno: ajusta posição para "cortar" cabeçalho */
+.iframe-visor iframe {
+    width: 100%;               /* Largura total do iframe */
+    height: 1800px;             /* Maior que o container para corte */
+    position: absolute;        /* Permite mover o iframe dentro do container */
+    top: -160px;               /* Move o iframe para cima, cortando topo */
+    left: 0px;                 /* Posição horizontal */            /* Remove borda do iframe */
+    border-radius: 10;         /* Bordas arredondadas internas */
+}
+.iframe-visor.liturgia iframe {
+    top: -270px; /* corta mais só para a liturgia */
+    height: 1800px; /* embaixo*/
+}
+
+/* =======================
+   FOOTER
+   ======================= */
+.footer {
+    background-color: #1f2428; /* Fundo do rodapé */
+    color: #ffffff;            /* Cor do texto */
+    width: 100%;               /* Ocupa toda a largura */
+    padding: 20px 20px;        /* Espaçamento interno */
+    margin-top: 60px;          /* Espaço acima do footer */
+}
+
+.footer-info {
+    margin: 0;
+    font-size: 14px;           /* Tamanho da fonte */
+    opacity: 0.85;             /* Transparência do texto */
+    line-height: 1.3;          /* Altura das linhas */
+}
+
+.footer-content {
+    max-width: 1200px;         /* Limita largura do conteúdo */
+    margin: 0 auto;            /* Centraliza horizontalmente */
+}
+
+.footer-top {
+    display: flex;             /* Layout em linha */
+    justify-content: center;   /* Centraliza horizontalmente */
+    gap: 40px;                 /* Espaço entre elementos */
+    align-items: flex-start;   /* Alinha ao topo */
+}
+
+.footer-left,
+.footer-center {
+    width: 45%;                /* Largura das colunas esquerda e central */
+}
+
+.footer-right p {
+    margin: 2px 0;             /* Espaçamento entre parágrafos */
+    line-height: 1.2;          /* Altura das linhas */
+    opacity: 0.85;             /* Transparência */
+}
+
+.footer-heading {
+    font-size: 24px;           /* Tamanho do título */
+    font-weight: 700;          /* Negrito */
+    margin-bottom: 6px;        /* Espaço abaixo do título */
+}
+
+.footer-buttons {
+    display: flex;             /* Layout em linha */
+    margin-top: 6px;
+    flex-direction: column;    /* Coloca os links em coluna */
+    gap: 4px;                  /* Espaço entre os links */
+}
+
+.footer-buttons a {
+    color: #ffffff;            /* Cor do link */
+    text-decoration: none;     /* Remove sublinhado */
+    opacity: 0.85;             /* Transparência */
+}
+
+.footer-buttons a:hover {
+    opacity: 1;                /* Link mais visível ao passar o mouse */
+    text-decoration: underline;/* Sublinhado no hover */
+}
+
+.footer-center p {
+    margin: 5px 0;             /* Espaçamento entre parágrafos */
+    opacity: 0.85;             /* Transparência */
+}
+
+.footer-title {
+    text-align: center;        /* Centraliza o texto */
+    margin-top: 30px;          /* Espaço acima */
+    font-size: 14px;           /* Tamanho da fonte */
+    opacity: 0.8;              /* Transparência */
+}
+
+
+/* =======================
+   TIPOGRAFIA
+   ======================= */
+h1, h2 {
+    font-family: 'Playfair Display', serif; /* Fonte para títulos */
+}

@@ -1,0 +1,57 @@
+<%- include("partials/header") %>
+
+<!-- Wrapper só para Santo do Dia + texto -->
+<div class="santo-wrapper">
+
+    <!-- Santo do Dia (mesmo tamanho que antes) -->
+    <div class="container container-vinho santo-container">
+        <h1 class="text-center mb-4 text-white">--Santo do dia--</h1>
+        <div class="iframe-visor">
+            <iframe 
+                src="https://santo.cancaonova.com/" 
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Novo container de texto ao lado -->
+    <div class="container texto-container">
+        <h2 class="text-white mb-3">Informações Importantes!</h2>
+        <p class="text-white">
+            O Ano litúrgico da Igreja, de doze meses, é dividido em tempos litúrgicos, onde se celebram os mistérios da vida de Cristo, assim como os Santos. O Ano Litúrgico tem três ciclos: anos A, B e C que se repetem. Cada ano tem uma sequência de leituras próprias. Em 2025, foi o ciclo C. Em 2026, será o ciclo A.
+
+        </p>
+        <p class="text-white">
+            O Ano Litúrgico começa no 1º Domingo do Advento (cerca de quatro semanas antes do Natal) e termina no sábado anterior a ele. O Ano Litúrgico da Igreja tem também leituras bíblicas apropriadas para as celebrações de cada Santo em particular.
+        </p>
+        <p class="text-white">Advento: O primeiro tempo do Ano Litúrgico, que antecede o Natal. </p>
+        <p class="text-white"> Natal: O centro do Ano Litúrgico, celebrando o nascimento de Jesus Cristo. </p>
+        <p class="text-white"> Tempo Comum: O tempo que se segue ao Natal, que é dividido em dois períodos: Tempo Comum I e Tempo Comum II.  </p>
+        <p class="text-white"> Quaresma: O tempo litúrgico de conversão, que prepara os fiéis para a Páscoa. </p>
+        <p class="text-white"> Tríduo Pascal: O conjunto de três dias celebrados na Páscoa. </p>
+        <p class="text-white"> Páscoa: A maior das solenidades, celebrando a ressurreição de Jesus Cristo. </p>
+          
+    </div>
+
+</div>
+
+<!-- Liturgia Diária continua abaixo normalmente -->
+<div class="container container-vinho mt-4">
+    <h1 class="text-center mb-4 text-white">--Liturgia Diária--</h1>
+    <div class="iframe-visor liturgia">
+        <iframe 
+            src="https://www.cnbb.org.br/liturgia-diaria/" 
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+<!-- Botões -->
+<div class="mt-2 mb-2 ms-5">
+    <a href="/usuario" class="btn btn-secondary me-2">Área do Coroinha</a>
+    <a href="/admin" class="btn btn-secondary">Área do Coordenador</a>
+</div>
+
+<%- include("partials/footer") %>
